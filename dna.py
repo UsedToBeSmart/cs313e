@@ -6,8 +6,14 @@ DNA
 def longest_subsequence(string_1, string_2):
     """ADD YOUR CODE HERE """
     longest=""
-    for(s1 in string_1):
-        for(s2 in string_2):
+    if(len(string_1)>=len(string_2)):
+        size=len(string_1)
+    else:
+        size=len(string_2)
+    for i in range(0,size):
+        for j in range(len(string_1)):
+            substring(string_1,j,j+i)
+            for(s2 in string_2):
             
 
 
