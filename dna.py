@@ -1,19 +1,46 @@
 """
 DNA
 """
+# F i l e : dna . py
 
+# D e s c r i p t i o n : practice code
+
+# S t u d e n t Name : Alex Smith   
+
+# S t u d e n t UT EID : ams24495   
+
+# P a r t n e r Name : forgot
+
+# P a r t n e r UT EID : 
+
+# C o u r s e Name : CS 313E
+
+# Unique Number : 50183
+
+# D a t e C r e a t e d :
+
+# D a t e L a s t M o d i f i e d :
 
 def longest_subsequence(string_1, string_2):
     """ADD YOUR CODE HERE """
-    longest=""
+    longest=[]
     if(len(string_1)>=len(string_2)):
         size=len(string_1)
     else:
         size=len(string_2)
     for i in range(0,size):
         for j in range(len(string_1)):
-            substring(string_1,j,j+i)
-            for(s2 in string_2):
+            if(j+i>len(string_1)):
+                break
+            s1=string_1[j,j+i]
+            for k in range(len(string_2)):
+                if(k+i>len(string_1)):
+                    break
+                s2=string_2[k,k+i]
+                if(s1==s2):
+                    longest.append(s1)
+    return longest
+            
             
 
 
